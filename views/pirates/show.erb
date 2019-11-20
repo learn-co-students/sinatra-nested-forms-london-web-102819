@@ -1,7 +1,23 @@
-<h1>Display your Pirate here</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
 
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+    <h1>pirate name: <%= @pirate.name%></h1>
+    <h1>pirate weight: <%= @pirate.weight%></h1>
+    <h1>pirate height: <%= @pirate.height%></h1>
+<br>
+        <h2>ship_name_1: <%= @ships[0].name%></h2>
+        <h2>ship_type_1: <%= @ships[0].type%></h2>
+        <h2>ship_booty_1: <%= @ships[0].booty%></h2>
+        <h2>ship_name_2: <%= @ships[1].name%></h2>
+        <h2>ship_type_2: <%= @ships[1].type%></h2>
+        <h2>ship_booty_2: <%= @ships[1].booty%></h2>
+<br>
+</body>
+</html>
