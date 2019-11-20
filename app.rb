@@ -13,6 +13,7 @@ module FormsLab
 
     post "/pirates" do
       @pirate = Pirate.new(params[:pirate])
+      bingding.pry
       params[:pirate][:ships].each do |details|
         Ship.new(details)
       end
@@ -22,7 +23,6 @@ module FormsLab
       erb :"pirates/show"
     end
 
-    
     get "/pirates/show" do
       erb :"pirates/show"
     end
